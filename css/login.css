@@ -1,0 +1,74 @@
+/* THIS STYLESHEEY CONTAINS STYLING OF LOGIN PAGE */
+
+.home{
+    background:rgb(72, 185, 230);
+  }
+  
+  .home .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home .row .form-container{
+    width:50%;
+    padding-right: 6rem;
+  }
+  
+  .home .row .form-container input{
+    height:4rem;
+    width:100%;
+    background:#fff;
+    border:none;
+    border-radius: 5rem;
+    padding:0 1rem;
+    margin:1rem 0;
+    color:var(--pink);
+    font-size: 1.7rem;
+    transition: .2s linear;
+  }
+  
+  .home .row .form-container input:focus:focus{
+    border:.2rem solid var(--pink);
+  }
+  
+  
+  .home .row .form-container input[type="submit"]{
+    width:17rem;
+    background:green;
+    color:#fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+  }
+
+  .home .row .form-container .title:hover{
+    color: var(--pink);
+    text-decoration: underline;
+  }
+  .home .row .form-container a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+  }
+  
+  .home .row .form-container input[type="submit"]:hover{
+    background:none;
+    color:green;
+    border:.2rem solid green;
+  }
+
+  @media (max-width:768px){
+    .home .row{
+      flex-flow: column;
+    }
+  
+    .home .row .image img{
+      height:50vh;
+      width:90vw;
+    }
+  
+    .home .row .form-container{
+      width:90%;
+      padding:0;
+    }
+  }
